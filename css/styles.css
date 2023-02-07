@@ -1,0 +1,62 @@
+.switch-label {
+  display: inline-block;
+  height: 30px;
+  width: 55px;
+  background-color: #aaa;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+.switch-label::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 100px;
+  left: 5px;
+  top: 4px;
+}
+
+#btn-switch {
+  display: none;
+}
+#btn-switch:checked ~ .switch-label {
+  background-color: #448c74;
+}
+#btn-switch:checked ~ .switch-label::after {
+  left: 28px;
+}
+
+body {
+  background-color: #2c2c2c;
+}
+
+section div.display {
+  margin-top: 10%;
+}
+section div.display h1 {
+  font-size: 50px;
+}
+section div.display p {
+  color: #abb2b9;
+  font-size: 18px;
+}
+section div.display::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #808080;
+  opacity: 0.1;
+}
+
+.card {
+  width: 18rem;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

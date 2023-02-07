@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica Boostrap</title>
+
+    <!-- Link a Boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Link a Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Link a estilo propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Nav -->
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Around</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Landings</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pages</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Account</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >UI Kit</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Docs</a>
+              </li>
+            </ul>
+            <div class="nav-icons d-flex px-3 gap-3">
+              <!-- Iconos de sol y noche -->
+              <div class="night-mode d-flex mt-2 gap-2">
+                <i class="bi bi-sun text-success"></i>
+                <input type="checkbox" id="btn-switch" />
+                <label for="btn-switch" class="switch-label"></label>
+                <i class="bi bi-moon text-success"></i>
+              </div>
+              <button class="btn btn-success rounded rounded-4">
+                <i class="bi bi-cart"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section>
+        <article>
+          <div class="display text-white text-center">
+            <h1 class="">Have a look Around</h1>
+            <p>
+              And you will find everything you need to build a great lookin
+              website
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Section de Cards -->
+      <section class="mb-md-3 row">
+        <div
+          class="container d-md-flex justify-content-center align-items-center gap-4"
+        >
+          <div class="card">
+            <div class="card-body">
+              <div class="h1 text-center">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h5 class="card-title text-center">Aventura</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                eaque minima esse labore hic quia, ea ipsa. Quis quidem, dolorum
+                quam eum voluptate eligendi, asperiores tenetur sunt voluptatem
+                ad totam?
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="h1 text-center">
+                <i class="bi bi-house-fill"></i>
+              </div>
+              <h5 class="card-title text-center">Alojamiento</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                eaque minima esse labore hic quia, ea ipsa. Quis quidem, dolorum
+                quam eum voluptate eligendi, asperiores tenetur sunt voluptatem
+                ad totam?
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="h1 text-center">
+                <i class="bi bi-rocket"></i>
+              </div>
+              <h5 class="card-title text-center">Vuelos</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                eaque minima esse labore hic quia, ea ipsa. Quis quidem, dolorum
+                quam eum voluptate eligendi, asperiores tenetur sunt voluptatem
+                ad totam?
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parte donde la gente opina -->
+        <div class="row mt-4">
+          <div class="container-flow bg-success">
+            <h3 class="text-white text-center">
+              Que dice la gente de nosotros
+            </h3>
+            <div class="container">
+              <p class="text-white text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                sunt hic, quae rerum iusto.
+              </p>
+            </div>
+            <!-- Parte donde trabajamos con las 3 tarjetas -->
+            <div class="container">
+              <div class="d-md-flex justify-content-center gap-5">
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="imagenes/empleada-recorte.jpg"
+                    class="card__image"
+                    alt="imagen de perfil"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Evelyn Mcdonnel</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="imagenes/empleada-recorte.jpg"
+                    class="card__image"
+                    alt="imagen de perfil"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Evelyn Mcdonnel</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="imagenes/empleada-recorte.jpg"
+                    class="card__image"
+                    alt="imagen de perfil"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Evelyn Mcdonnel</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="text-center">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section de ofertas -->
+      <section class="bg-primary text-white p-5">
+        <div class="container">
+          <div class="d-md-flex justify-content-center align-items-center">
+            <h3 class="mb-3 mb-md-0">Ofertas exclusivas en su correo</h3>
+            <div class="input-group">
+              <input type="text" class="rounded form-control" />
+              <button class="btn btn-dark btn-lg">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Link a Javascript de Boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
